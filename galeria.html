@@ -4,32 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galería de Arte en Línea</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header>
-    <h1>Galería de Arte en Línea</h1>
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="galeria.html">Galería</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
+<header class="bg-dark py-3">
+    <div class="container">
+        <h1 class="text-light">Galería de Arte en Línea</h1>
+        <nav>
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="galeria.html">Galería</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
 </header>
-<main>
-    <h2>Nuestra Colección</h2>
-    <div>
-        <img src="./obras/obra1.jpg" alt="Obra 1">
-    </div><br/>
-    <div>
-        <img src="./obras/obra2.jpg" alt="Obra 1">
-    </div><br/>
-    <div>
-        <img src="./obras/obra3.jpg" alt="Obra 1">
-    </div><br/>
-    <div>
-        <img src="./obras/obra4.jpg" alt="Obra 1">
-    </div><br/>
+<main class="container py-5">
+    <h2 class="text-center mb-4">Nuestra Colección</h2>
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+        <div class="col">
+            <img src="./obras/obra1.jpg" class="img-fluid rounded" alt="En la obra uno podemos observar un leon formado las llamas del fuego en un pàramo desolado">
+        </div>
+        <div class="col">
+            <img src="./obras/obra2.jpg" class="img-fluid rounded" alt="En la obra dos podemos ver un retrato de una figura esqueletica con una capucha negra sosteniendo una flor azul">
+        </div>
+        <div class="col">
+            <img src="./obras/obra3.jpg" class="img-fluid rounded" alt="En la obra tres podemos observar el retrato de una mujer con cabello azul que forma olas en un fondo tambien compuesto por olas de distintos colores">
+        </div>
+        <div class="col">
+            <img src="./obras/obra4.jpg" class="img-fluid rounded" alt="En la obra 4 podemos ver un plàtano con un rostro humano dibujado de una forma caricaturezca con botas rojas">
+        </div>
+    </div>
 </main>
 </body>
 </html>
